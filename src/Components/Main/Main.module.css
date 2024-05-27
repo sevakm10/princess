@@ -80,7 +80,7 @@
 @media (max-width: 430px) {
     .bc_img {
         height: 100vh;
-      background-position: -250px center;
+      background-position: center;
     }
     .blok {
         width: 100%;
