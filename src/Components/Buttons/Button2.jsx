@@ -14,7 +14,7 @@ export default function Button2() {
 
   return (
     <div className={style.wrap} ref={appRef}>
-      <button className={style.button}><a href="tel:077-36-76-56">Call us</a></button>
+      <button className={style.button}><p><a href="tel:077-36-76-56">Call us</a></p></button>
       <div className={style.span}></div>
     </div>
   );

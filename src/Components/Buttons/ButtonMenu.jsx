@@ -23,13 +23,12 @@ export default function ButtonMenu() {
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-    
   };
 
   return (
     <div className={styles.header}>
       <div className={`${styles.hamburger1} ${styles.hamburger}`} onClick={handleClick}>
-        <span />
+        <span className='s'/>
         <span />
         <span />
       </div>

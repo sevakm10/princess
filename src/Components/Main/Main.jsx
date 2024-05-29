@@ -16,10 +16,10 @@ export default function Main() {
     return (
         <>
           <div className={style.bc_img} id='Home'>
-            <div className={style.blok} >
+            <span className={style.blok} >
               <p className={style.p1} ref={appRef1}>Princess</p>
               <p className={style.p2} ref={appRef2}>wedding salon</p>
-            </div>
+            </span>
             <Button2 />
         </div>
         </>
