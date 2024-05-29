@@ -1,5 +1,5 @@
 import style from './Main.module.css'
-import Button from '../Buttons/Button';
+import Button2 from '../Buttons/Button2';
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 
@@ -10,7 +10,7 @@ export default function Main() {
     useLayoutEffect(() => {
       gsap.timeline()
           .fromTo(appRef1.current, { x: -100, opacity: 0 }, { x: 0, opacity: 1, delay:1,duration:1})
-          .fromTo(appRef2.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1,  });
+          .fromTo(appRef2.current, {  opacity: 0 }, { opacity: 1, duration:2});
   }, []);
 
     return (
@@ -19,8 +19,8 @@ export default function Main() {
             <div className={style.blok} >
               <p className={style.p1} ref={appRef1}>Princess</p>
               <p className={style.p2} ref={appRef2}>wedding salon</p>
-              <Button />
             </div>
+            <Button2 />
         </div>
         </>
     )
