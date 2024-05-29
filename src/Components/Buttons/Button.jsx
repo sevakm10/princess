@@ -14,7 +14,7 @@ export default function Button() {
 
     return (
         <div ref={containerRef}>
-            <button className={style.button}><a href="tel: 041894347"></a> Hover me</button>
+            <button className={style.button}><a href="tel:077-36-76-56">Call us</a></button>
         </div>
     );
 }

@@ -15,6 +15,9 @@
     cursor: pointer;
     /* animation: scaleAnimation 0.8s infinite alternate; */
    }
+   .button a {
+    text-decoration: none;
+   }
 
    /* @keyframes scaleAnimation {
     0% {

@@ -93,6 +93,9 @@ html, body {
   opacity: 1;
   visibility: visible;
 }
+.menuOverlay a {
+  text-decoration: none;
+}
 .nav {
   display: none;
   vertical-align: middle;

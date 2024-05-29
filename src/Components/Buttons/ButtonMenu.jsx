@@ -47,6 +47,9 @@ export default function ButtonMenu() {
           <li>
             <a href="#Gallery" onClick={handleClick}>Gallery</a>
           </li>
+          <li>
+          <a href="tel:077-36-76-56">077-36-76-56</a>
+          </li>
         </ul>
       </div>
     </div>
