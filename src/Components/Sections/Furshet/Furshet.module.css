@@ -66,8 +66,12 @@
     }
 }
 @media (max-width: 480px) {
-    .furshet{
-        margin-bottom: 10vh;
+    .show {
+        margin: 0;
+    }
+    .blockText{
+        padding: 0;
+        margin: 0 auto 50px;
     }
     
     .img{

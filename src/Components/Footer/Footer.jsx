@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="footer">
         <div >
             <h2>Հանրապետության 10/12</h2>
-            <p> 077-36-76-56</p>
+            <p><a href="">077-36-76-56</a> </p>
         </div>
       <ul className="wrapper">
         <a href="https://www.facebook.com/knarik.tonakanian">

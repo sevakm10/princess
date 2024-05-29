@@ -15,7 +15,11 @@
   margin: 0 auto;
   
 } 
-
+.carousel h2 {
+    font-size:3vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
 .carouselTrack {
   display: flex;
   width: calc(270px * 10); /* Adjust based on number of images */

@@ -112,4 +112,6 @@ h2, p{
     background: #e4405f;
     color: #fff;
   }
-  
+  .footer a {
+    text-decoration: none;
+  }
