@@ -15,7 +15,7 @@ export default function ButtonMenu() {
       hamburger.classList.add(styles.open);
       menuOverlay.classList.add(styles.open);
       setSt("table-cell")
-      setZ(1)
+      setZ(2)
     } else {
       hamburger.classList.remove(styles.open);
       menuOverlay.classList.remove(styles.open);
