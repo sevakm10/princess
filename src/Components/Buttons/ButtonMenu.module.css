@@ -28,6 +28,7 @@ html, body {
   display: inline-block;
   z-index: 100;
 }
+
 .hamburger span {
   background: #8f8a8a;
   display: block;
@@ -44,6 +45,9 @@ html, body {
   opacity: 1;
   width: 100%;
   left: 0;
+}
+.hamburger.open span {
+  background-color: snow;
 }
 .hamburger span:nth-child(1) {
   top: 0px;

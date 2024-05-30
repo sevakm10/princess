@@ -4,7 +4,7 @@ import styles from "./ButtonMenu.module.css"
 export default function ButtonMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const [st, setSt] = useState("none");
-  const [z, setZ] = useState("0");
+  const [z, setZ] = useState(1);
 
   useEffect(() => {
     // Этот эффект будет выполняться при каждом изменении isOpen
@@ -20,7 +20,7 @@ export default function ButtonMenu() {
       hamburger.classList.remove(styles.open);
       menuOverlay.classList.remove(styles.open);
       setSt("none")
-      setZ(0)
+      setZ(1)
     }
   }, [isOpen]);
 
@@ -30,7 +30,7 @@ export default function ButtonMenu() {
 
   return (
     <div className={styles.header} style={{zIndex:z}}>
-      <div className={`${styles.hamburger1} ${styles.hamburger}`} onClick={handleClick}>
+      <div className={styles.hamburger} onClick={handleClick}>
         <span className='s'/>
         <span />
         <span />
