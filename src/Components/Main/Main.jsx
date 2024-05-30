@@ -1,16 +1,17 @@
 import style from './Main.module.css'
 import Button2 from '../Buttons/Button2';
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 export default function Main() {
     const appRef1 = useRef(null)
     const appRef2 = useRef(null)
 
-    useLayoutEffect(() => {
+    useEffect(() => {
       gsap.timeline()
           .fromTo(appRef1.current, { x: -100, opacity: 0 }, { x: 0, opacity: 1, delay:1,duration:1})
           .fromTo(appRef2.current, {  opacity: 0 }, { opacity: 1, duration:2});
+      gsap.fromTo(appRef1.current, { x: -100, opacity: 0 }, { x: 0, opacity: 1, delay:1,duration:1})
   }, []);
 
     return (

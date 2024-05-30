@@ -2,7 +2,7 @@ import style from "./Show.module.css";
 import showImg from "../../../assets/show3.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 
 
@@ -11,8 +11,9 @@ import { useLayoutEffect, useRef } from "react";
 export default function Show() {
   const appRef1 = useRef(null);
   const appRef2 = useRef(null);
+  
   gsap.registerPlugin(ScrollTrigger)
-  useLayoutEffect(()=>{
+  useEffect(()=>{
     gsap.fromTo(
       appRef1.current, {
         opacity:0,

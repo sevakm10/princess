@@ -9,7 +9,7 @@ import img7 from '../../../assets/c/c7.jpg';
 import img8 from '../../../assets/c/c8.jpg';
 import img9 from '../../../assets/c/c9.jpg';
 import img10 from '../../../assets/c/c10.jpg';
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from "gsap/all";
 import gsap from 'gsap';
 
@@ -20,7 +20,7 @@ export default function Gallery() {
   gsap.registerPlugin(ScrollTrigger)
   const appRef1 = useRef(null)
   const appRef2 = useRef(null)
-  useLayoutEffect(()=> {
+  useEffect(()=> {
     gsap.fromTo(
       appRef1.current, 
       {y:50, opacity:0}, 

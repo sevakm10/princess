@@ -19,7 +19,7 @@ export default function Button2() {
     };
 
     return (
-        <div className={style.wrap} ref={appRef}>
+        <div className={style.wrap} ref={appRef} >
             <div className={style.button}>
                 <a href="tel:+37477367656" onClick={handleClick}>Call us</a>
             </div>

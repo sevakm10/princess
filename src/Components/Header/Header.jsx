@@ -2,14 +2,14 @@ import style from "./Header.module.css";
 import imgTel from "../../assets/tel.svg";
 import gsap from "gsap";
 
-import { useLayoutEffect,useRef } from "react";
+import { useEffect,useRef } from "react";
 
 export default function Header() {
   const appRef = useRef(null)
   const appRef1 = useRef(null)
   const appRef2 = useRef(null)
 
-  useLayoutEffect(()=>{
+  useEffect(()=>{
     // gsap.fromTo(
     //   appRef.current,
     //   {x:-50,opacity:0},

@@ -2,14 +2,14 @@ import style from "./Furshet.module.css";
 import furshetImg from "../../../assets/furshet1.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 
 export default function Furshet() {
     gsap.registerPlugin(ScrollTrigger);
 const appRef1 = useRef(null)
 const appRef2 = useRef(null)
-useLayoutEffect(()=>{
+useEffect(()=>{
   gsap.fromTo(
     appRef1.current, {
       opacity:0,
